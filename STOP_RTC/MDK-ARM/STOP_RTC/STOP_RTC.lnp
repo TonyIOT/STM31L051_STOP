@@ -1,0 +1,24 @@
+--cpu Cortex-M0+
+"stop_rtc\startup_stm32l051xx.o"
+"stop_rtc\main.o"
+"stop_rtc\stm32l0xx_it.o"
+"stop_rtc\stm32l0xx_hal_msp.o"
+"stop_rtc\stm32l0xx_hal_tim.o"
+"stop_rtc\stm32l0xx_hal_tim_ex.o"
+"stop_rtc\stm32l0xx_hal.o"
+"stop_rtc\stm32l0xx_hal_rcc.o"
+"stop_rtc\stm32l0xx_hal_rcc_ex.o"
+"stop_rtc\stm32l0xx_hal_flash_ramfunc.o"
+"stop_rtc\stm32l0xx_hal_flash.o"
+"stop_rtc\stm32l0xx_hal_flash_ex.o"
+"stop_rtc\stm32l0xx_hal_gpio.o"
+"stop_rtc\stm32l0xx_hal_pwr.o"
+"stop_rtc\stm32l0xx_hal_pwr_ex.o"
+"stop_rtc\stm32l0xx_hal_cortex.o"
+"stop_rtc\stm32l0xx_hal_rtc.o"
+"stop_rtc\stm32l0xx_hal_rtc_ex.o"
+"stop_rtc\system_stm32l0xx.o"
+--strict --scatter "STOP_RTC\STOP_RTC.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "STOP_RTC.map" -o STOP_RTC\STOP_RTC.axf
